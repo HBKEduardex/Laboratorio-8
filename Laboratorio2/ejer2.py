@@ -15,7 +15,7 @@ class camara_filtro:
         elif self.selecion_filtro == 'canny':
             return cv2.Canny(frame, 100, 200)
         elif self.selecion_filtro == 'blur':
-            return cv2.GaussianBlur(frame, (15, 15), 0)
+            return cv2.GaussianBlur(frame, (15, 15), 0) # kernel mas grande, mas desenfoque
         else:
             return frame
 
